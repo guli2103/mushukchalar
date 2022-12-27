@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crimson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="carousel" duration="7000">
+        <ul tabindex="0">
+          <li id="c1_slide1" class="selected">
+            <div>
+              <div></div>Nice cat number 1<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide2">
+            <div>
+              <div></div>Nice cat number 2<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide3">
+            <div>
+              <div></div>Nice cat number 3<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide4">
+            <div>
+              <div></div>Nice cat number 4<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide5">
+            <div>
+              <div></div>Nice cat number 5<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide6">
+            <div>
+              <div></div>Nice cat number 6<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide7">
+            <div>
+              <div></div>Nice cat number 7<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+          <li id="c1_slide8">
+            <div>
+              <div></div>Nice cat number 8<br /><a href="https://www.google.com">adopt me</a>
+            </div>
+          </li>
+        </ul>
+        <ol>
+          <li class="selected"><a href="#c1_slide1"></a></li>
+          <li><a href="#c1_slide2"></a></li>
+          <li><a href="#c1_slide3"></a></li>
+          <li><a href="#c1_slide4"></a></li>
+          <li><a href="#c1_slide5"></a></li>
+          <li><a href="#c1_slide6"></a></li>
+          <li><a href="#c1_slide7"></a></li>
+          <li><a href="#c1_slide8"></a></li>
+        </ol>
+        <div class="prev">&lsaquo;</div>
+        <div class="next">&rsaquo;</div>
+      </div>
+      <h2>Technique</h2>
+      <p>The above is an unordened list with horizontal overflow set to auto, snap scrolling and hidden scrollbars. You can swipe the carousel with your finger on touch screens through native touch scroll. You can use the arrow keys on your keyboard to scroll the carousel (when the carousel has focus). The bullets are actually anchor links, which trigger a 'scroll-behaviour: smooth' scroll. The script uses a simple setInterval for autoplay which does not fire during hover and can be set on the carousel div in a custom attribute in milliseconds. Also checkout the <a href="https://codepen.io/joosts/pen/MWJBPgo" target="_top">Carousel with CSS scroll snap</a>.</p>
+      
+      <h2>Browser compatibility</h2>
+      <p>The code is tested on the newest versions of Chrome, Firefox, Chrome mobile and Firefox mobile in april 2021. This code uses fairly new techniques, like scroll snapping. However, I expect this solution to degrade quite graceful. It even looks and works 'okay-ish' without javascript.</p>
+      
+      <h2>About the author</h2>
+      <p>I am a <a href="https://www.usecue.com/">website performance expert</a> and for <a href="https://www.usecue.com/portfolio/poet-vermaat/">a project</a> I was looking for a <a href="https://www.usecue.com/blog/carousel-with-scroll-snap/">touch enabled carousel</a>. I could not find one that was minimal, so I created a basic responsive and touch-enabled carousel that weighs only 3kb (uncompressed and including CSS). This carousel is based on modern web technology and will not slow down (the rendering of) your page... and yes, that <a href="https://www.usecue.com/portfolio/poet-vermaat/">project link</a> is a link to a production website.</p>
+      
+      <h2>Credits</h2>
+      <p>The approach is (partly) based on the 2019 scroll snap carousel from <a href="https://nolanlawson.com">Nolan Lawson</a>. The debounce function is written by <a href="https://gomakethings.com">Chris Ferdinandi</a>. The cat images are borrowed from <a href="https://www.pexels.com/">Pexels</a>.</p>
+      
+      <h2>License</h2>
+      <p>WTFPL - This is a GPL-compatible permissive license most commonly used as a free software license. As a public domain like license, the WTFPL is essentially the same as dedication to the public domain. It allows redistribution and modification of the work under any terms. The title is an abbreviation of "Do What The Fuck You Want To Public License".</p>
+      
+      <p><br />Enjoy the code!<br /><br /><a href="https://www.usecue.com/">Joost van der Schee</a></p>
+      
+      <br /><br /><br /><br />
+
+    <script src="main.js"></script>
+</body>
+</html>

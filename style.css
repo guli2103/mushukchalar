@@ -1,0 +1,163 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CAROUSEL CSS */
+  .carousel {
+    position: relative;
+  }
+  .carousel::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: inset 0px 0px 120px 30px rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .carousel ul {
+    overflow: auto;
+    display: flex;
+    height: 500px;
+    max-height: 500px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-points-y: repeat(100%);
+    scroll-snap-align: left;
+    scroll-behavior: smooth;
+    background: gray;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .carousel ul::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  .carousel ul li {
+    width: 100%;
+    min-width: 100%;
+    list-style: none;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-right: calc(-100% + 300px);
+    transition: transform 0.2s linear;
+    opacity: 0.3;
+    line-height: 1;
+    position: relative;
+    bottom: 15px;
+  }
+  .carousel ul li.selected {
+    opacity: 1;
+    z-index: 9;
+  }
+  .carousel ul li.selected > div {
+    transform: scale(1.6);
+  }
+  .carousel ul li > div {
+    z-index: 9;
+    margin: 0 auto;
+    max-width: 170px;
+    background: white;
+    transition: all 0.2s linear;
+    transform: scale(0.95);
+    padding: 20px 15px;
+  }
+  .carousel ul li > div > div {
+    background: url(https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500)
+      center center / cover no-repeat;
+    height: 110px;
+    margin-bottom: 15px;
+    margin: -20px -15px 15px;
+  }
+  .carousel ul li div a {
+    color: white;
+    display: inline-block;
+    background: white;
+    color: white;
+    padding: 8px 15px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 17px;
+    background: black;
+  }
+  
+  .carousel ol {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+  .carousel ol li {
+    list-style: none;
+    padding: 0 5px;
+  }
+  .carousel ol li a {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 100%;
+  }
+  .carousel ol li.selected a {
+    background: white;
+  }
+  .carousel .prev,
+  .carousel .next {
+    user-select: none;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+  .carousel .next {
+    left: auto;
+    right: 0;
+  }
+  
+  /* RESPONSIVE CSS */
+  @media only screen and (max-width: 600px) {
+    .carousel ul li div {
+      display: none;
+    }
+  }
+  
+  /* DEMO CSS */
+  .carousel ul li:nth-child(2) > div > div,
+  .carousel ul li:nth-child(6) > div > div {
+    background-image: url(https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500);
+  }
+  .carousel ul li:nth-child(3) > div > div,
+  .carousel ul li:nth-child(7) > div > div {
+    background-image: url(https://images.pexels.com/photos/4492170/pexels-photo-4492170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500);
+  }
+  .carousel ul li:nth-child(4) > div > div,
+  .carousel ul li:nth-child(8) > div > div {
+    background-image: url(https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500);
+  }
+  p,
+  h2 {
+    margin: 15px auto;
+    padding: 0 15px;
+    max-width: 800px;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  
